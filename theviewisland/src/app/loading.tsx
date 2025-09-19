@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 export default function Loading() {
   return (
     <div className="mx-auto flex w-full max-w-[110rem] animate-pulse flex-col space-y-2.5 px-2.5 pt-5 md:space-y-7 md:px-5 md:pt-10">
@@ -16,7 +18,7 @@ export default function Loading() {
       </div>
       {[...Array(3)].map((o, i) => {
         return (
-          <>
+          <Fragment key={i}>
             <div
               key={i}
               className="flex w-full justify-between pb-1 pt-1 md:pb-0 md:pt-5"
@@ -26,7 +28,7 @@ export default function Loading() {
             <div key={i + 3} className="flex w-full flex-col">
               <span className="h-[32.5rem] w-full rounded-lg bg-gray-200 md:h-[55rem] md:rounded-2xl" />
             </div>
-          </>
+          </Fragment>
         );
       })}
     </div>
