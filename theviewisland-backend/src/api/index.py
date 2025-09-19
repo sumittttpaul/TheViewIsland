@@ -1,7 +1,8 @@
 from http.server import BaseHTTPRequestHandler
 import json
 
-with open('./../data.json','r', encoding="utf8") as file:
+
+with open('./data.json','r', encoding="utf8") as file:
   response = json.load(file)
 
 class handler(BaseHTTPRequestHandler):
