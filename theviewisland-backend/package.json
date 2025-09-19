@@ -1,0 +1,13 @@
+{
+  "name": "theviewisland-backend",
+  "version": "1.0.0",
+  "main": "index.py",
+  "license": "MIT",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "devDependencies": {
+    "vercel": "^39.1.3"
+  }
+}
